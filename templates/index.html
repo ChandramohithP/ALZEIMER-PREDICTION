@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alzheimer's Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Alzheimer's Prediction</h1>
+        <form id="prediction-form">
+            <label for="Age">Age:</label>
+            <input type="number" name="Age" required><br>
+            <label for="Gender">Gender:0=male, 1=female<br></label>
+            <input type="number" name="Gender" required><br>
+            
+            <label for="Ethnicity">Ethnicity:NO=0,YES=1</label>
+            <input type="number" name="Ethnicity" required><br>
+            
+            <label for="EducationLevel">Education Level:</label>
+            <input type="number" name="EducationLevel" required><br>
+            
+            <label for="BMI">BMI:</label>
+            <input type="number" name="BMI" required><br>
+            
+            <label for="Smoking">Smoking:NO=0,YES=1</label>
+            <input type="number" name="Smoking" required><br>
+            
+            <label for="AlcoholConsumption">Alcohol Consumption:</label>
+            <input type="number" name="AlcoholConsumption" required><br>
+            
+            <label for="PhysicalActivity">Physical Activity:</label>
+            <input type="number" name="PhysicalActivity" required><br>
+            
+            <label for="DietQuality">Diet Quality:</label>
+            <input type="number" name="DietQuality" required><br>
+            
+            <label for="SleepQuality">Sleep Quality:</label>
+            <input type="number" name="SleepQuality" required><br>
+            
+            <label for="FamilyHistoryAlzheimers">Family History of Alzheimer's:NO=0,YES=1</label>
+            <input type="number" name="FamilyHistoryAlzheimers" required><br>
+            
+            <label for="CardiovascularDisease">Cardiovascular Disease:</label>
+            <input type="number" name="CardiovascularDisease" required><br>
+            
+            <label for="Diabetes">Diabetes:NO=0,YES=1</label>
+            <input type="number" name="Diabetes" required><br>
+            
+            <label for="Depression">Depression:NO=0,YES=1</label>
+            <input type="number" name="Depression" required><br>
+            
+            <label for="HeadInjury">Head Injury:NO=0,YES=1</label>
+            <input type="number" name="HeadInjury" required><br>
+            
+            <label for="Hypertension">Hypertension:NO=0,YES=1</label>
+            <input type="number" name="Hypertension" required><br>
+            
+            <label for="SystolicBP">Systolic Blood Pressure:</label>
+            <input type="number" name="SystolicBP" required><br>
+            
+            <label for="DiastolicBP">Diastolic Blood Pressure:</label>
+            <input type="number" name="DiastolicBP" required><br>
+            
+            <label for="CholesterolTotal">Total Cholesterol:</label>
+            <input type="number" name="CholesterolTotal" required><br>
+            
+            <label for="CholesterolLDL">LDL Cholesterol:</label>
+            <input type="number" name="CholesterolLDL" required><br>
+            
+            <label for="CholesterolHDL">HDL Cholesterol:</label>
+            <input type="number" name="CholesterolHDL" required><br>
+            
+            <label for="CholesterolTriglycerides">Triglycerides:</label>
+            <input type="number" name="CholesterolTriglycerides" required><br>
+            
+            <label for="MMSE">MMSE:</label>
+            <input type="number" step="0.00001" name="MMSE" required><br>
+            
+            <label for="FunctionalAssessment">Functional Assessment:</label>
+            <input type="number" name="FunctionalAssessment" required><br>
+            
+            <label for="MemoryComplaints">Memory Complaints:NO=0,YES=1</label>
+            <input type="number" name="MemoryComplaints" required><br>
+            
+            <label for="BehavioralProblems">Behavioral Problems:NO=0,YES=1</label>
+            <input type="number" name="BehavioralProblems" required><br>
+            
+            <label for="ADL">Activities of Daily Living:</label>
+            <input type="number" name="ADL" required><br>
+            
+            <label for="Confusion">Confusion:NO=0,YES=1</label>
+            <input type="number" name="Confusion" required><br>
+            
+            <label for="Disorientation">Disorientation:NO=0,YES=1</label>
+            <input type="number" name="Disorientation" required><br>
+            
+            <label for="PersonalityChanges">Personality Changes:NO=0,YES=1</label>
+            <input type="number" name="PersonalityChanges" required><br>
+            
+            <label for="DifficultyCompletingTasks">Difficulty Completing Tasks:NO=0,YES=1</label>
+            <input type="number" name="DifficultyCompletingTasks" required><br>
+            
+            <label for="Forgetfulness">Forgetfulness:NO=0,YES=1</label>
+            <input type="number" name="Forgetfulness" required><br>
+            
+            <button type="submit">Predict</button>
+        </form>
+        <div id="results">
+            <p id="diagnosis"></p>
+        </div>
+    </div>
+</body>
+</html>
